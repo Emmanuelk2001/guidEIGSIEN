@@ -9,10 +9,12 @@
     text-decoration: none;
     border: none;
 }
+
 #img-responsive{
-max-width: 20%;
-max-height: 20%;
+max-width: 17%;
+max-height: 17%;
 }
+
 
 html {
     font-size: 62.5%;
@@ -32,9 +34,9 @@ header {
     background-color: #fff;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: row;
     padding: 5px 1%;
-    height: 50px;
+    height: 60px;
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
 }
 header .logo {
@@ -44,6 +46,7 @@ header .logo {
     display: flex;
    flex-direction: row;
 }
+
 header .logo p {
     font-size: 15px;
     display: flex;
@@ -55,6 +58,7 @@ header .logo span {
 }
 .menu {
     display: flex;
+    margin-right: 100px;
 }
 .menu li {
     display: flex;
@@ -73,6 +77,59 @@ header .logo span {
 .menu li a:hover {
     color: #011281;
 }
+/* menu déroulant */
+/* Style pour le sous-menu */
+.sousmenu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Afficher le sous-menu lorsque l'utilisateur survole le lien parent */
+  .menu li:hover .sousmenu {
+    display: block;
+  }
+  
+  /* Afficher le sous-menu lorsque l'utilisateur clique sur le lien parent sur les appareils mobiles */
+  .menu li a:focus + .sousmenu {
+    display: block;
+  }
+  
+  /* Style pour les éléments du sous-menu */
+  .sousmenu li {
+    display: block;
+    text-align: left;
+  }
+  
+  /* Style pour les liens du sous-menu */
+  .sousmenu li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  /* Style pour les liens du sous-menu au survol */
+  .sousmenu li a:hover {
+    background-color: #f2f2f2;
+  }
+  /* Sous-menu */
+.sousmenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    list-style: none;
+
+}
+/* Affichage du sous-menu au survol du lien */
+.menu li:hover > .sousmenu {
+    display: block;
+}
+
+  
+/* -------------------------------- */
 header button {
     background-color: #011281;
     cursor: pointer;
@@ -318,15 +375,99 @@ header button {
     color: #fff;
     border: 0;
 }
-footer {
-    background-color: #011281;
-    text-align: center;
-    padding: 10px 0;
-    color: #fff;
-    font-size: 14px;
-}
+
 .menu_toggle {
     display: none;
+}
+footer {
+    flex-shrink: 0;
+    border-top: 1px dashed #000;
+    width: 100%;
+    background: #fff;
+    color: #333;
+}
+.content-footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 14px;
+    padding: 50px 0 100px;
+}
+
+.bloc {
+    flex-basis: 100%;
+    margin: 0 30px;
+}
+
+/* contact */
+.footer-contact h3,
+.footer-services h3,
+.footer-schedule h3,
+.footer-medias h3 {
+    font-size: 22px;
+
+}
+.footer-schedule{
+    width: 100%;
+    height: 100%;
+}
+
+.footer-contact p {
+    padding: 5px 0;
+}
+
+/* Services */
+.services-list,
+.schedule-list,
+.media-list {
+    list-style-type: none;
+}
+.services-list li {
+    padding: 2px 0;
+}
+.services-list a {
+    text-decoration: none;
+    color: #333;
+}
+.services-list a:hover {
+    color: rgb(13, 0, 98);
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1000px) {
+
+    .content-footer {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+    .bloc {
+        flex-basis: auto;
+        margin: 20px 20px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .content-footer {
+        justify-content: center;
+        padding-top: 30px;
+    }
+    .bloc {
+        flex-basis: 70%;
+        /* margin: 10px; */
+    }
+    .footer-contact h3,
+    .footer-services h3,
+    .footer-schedule h3,
+    .footer-medias h3 {
+        padding-bottom: 5px;
+    }
+
 }
 
 /*Responsive*/
