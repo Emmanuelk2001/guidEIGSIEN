@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>le Guide De L'EIGSIEN </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+    <script src="https://kit.fontawesome.com/3010b1eaf1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- header  -->
+    <header>
+        <!-- menu responsive -->
+        
+        <div class="menu_toggle">
+            <span></span>
+        </div>
+
+        <div class="logo">
+            <img src="images/eigsi.png"id="img-responsive">
+            <p><span>Guide De</span>L'EIGSIEN</p>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Acceuil</a></li>
+            <li><a href="#">Lieux de Casablanca</a></li>
+            <li><a href="#">Transport</a></li>
+            <li><a href="#">Loisirs</a></li>
+            <li><a href="#">Ou faire ses coures</a></li>
+            <li><a href="#">Pharmacies et Medecines</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </header>
+    <!-- section Acceuil -->
+     
+    <section id="home">
+        <div class="left">
+            <h1>Venez decouvir <span>Le Maroc</span> , pays d'Afrique du Nord</h1>
+            <p>Le Maroc ou depuis 1956, en forme longue
+                le royaume du Maroc, autrefois appelé
+                Empire chérifien, est un État unitaire
+                régionalisé situé en Afrique du Nord. Son
+                régime politique est une Monarchie
+                constitutionnelle semi parlementaire
+                unitaire et régionalisée. Sa capitale
+                administrative et politique est Rabat et sa
+                plus grande ville, ainsi que sa capitale économique, est Casablanca.
+                Géographiquement, il est notamment caractérisé par des zones
+                montagneuses ou désertiques et est l'un des seuls pays avec l'Espagne et la
+                France à comporter des rives sur la mer Méditerranée d'un côté et l'océan
+                Atlantique de l'autre. Sa population est de près de 34 millions d'habitants
+                (recensement de 2014) et sa superficie de 710 850 km2.
+            </p>
+            <p>
+            La dynastie alaouite ou les Alaouites « descendant d'Ali » est une dynastie
+            d'origine arabe, l'une des six dynasties
+            (Idrissides, Almoravides, Almohades, Mérinides, Saadiens) qui ont régné
+            sur le Maroc et dont la capitale est Fès (et pendant un temps Meknès)
+            depuis la seconde moitié du XVIIe
+            siècle.
+            Venus du Hejaz, ils s'installent
+            au Tafilalet, les Alaouites deviennent
+            sultans du Maroc à la suite d'une période
+            d'instabilité ayant suivi le décès du
+            dernier sultan de la dynastie
+            des Saadiens en 1659 et durant laquelle le
+            pays est morcelé en plusieurs États
+            indépendants, l'autorité centrale échouant
+            aux mains des Dilaïtes. Moulay Rachid,
+            troisième prince alaouite du Tafilalet,
+            réunifie le pays entre 1664 et 1669 et
+            réinstaure un pouvoir central, marquant
+            ainsi le début de la dynastie alaouite du Maroc, qui est toujours à la tête du
+            royaume de nos jours
+            </p>
+            <a href="#">Decouvir</a>
+        </div>
+        <div class="right">
+            <div id="map"></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6952052.970659675!2d-12.4435343151804!3d31.70067329138972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b88619651c58d%3A0xd9d39381c42cffc3!2sMaroc!5e0!3m2!1sfr!2sma!4v1683193765022!5m2!1sfr!2sma" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </section>
+    <!-- section vehicule -->
+
+    <section id="Lieux">
+        <h1 class="section_title">LES LIEUX CLES DE CASABLANCA</h1>
+        <div class="images">
+            <ul>
+                <li class="lieu">
+                   <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26588.84519009837!2d-7.674252784963615!3d33.58958684326764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d2607994d58f%3A0x67a1d618e7b0d072!2sMosqu%C3%A9e%20Hassan-II!5e0!3m2!1sfr!2sma!4v1683193970993!5m2!1sfr!2sma" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                   </div>
+                   <span>LA MOSQUEE HASSAN II</span>
+                   <a href="#">Détails</a>
+                </li>
+                <li class="lieu">
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53186.12829739031!2d-7.783038651367194!3d33.575895400000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d4a33900f835%3A0xb540923b5bdf10fb!2sMorocco%20Mall!5e0!3m2!1sfr!2sma!4v1683194517843!5m2!1sfr!2sma" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    
+                    </div>
+                    <span>MARINA MALL</span>
+                    <a href="#">Détails</a>
+                 </li>
+                 <li class="lieu">
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6646.3323507280575!2d-7.626643708162731!3d33.600992579522305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d2842753b1cf%3A0xd872188d7a277139!2sAncienne%20Medina%2C%20Casablanca%2020250!5e0!3m2!1sfr!2sma!4v1683194616243!5m2!1sfr!2sma" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                   
+                     </div>
+                    <span>ANCIENNE MEDINA</span>
+                    <a href="#">Détails</a>
+                 </li>
+                 <li class="lieu">
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.276352920158!2d-7.667210324867903!3d33.5981334415732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d306041585e7%3A0xb91ed398330cf3cd!2sANFAPLACE%20MALL!5e0!3m2!1sfr!2sma!4v1683194709786!5m2!1sfr!2sma" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    
+                    </div>
+                    <span>ANFA PLACE</span>
+                    <a href="#">Détails</a>
+                 </li>
+                 <li class="lieu">
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.6856033258105!2d-7.659844424869464!3d33.5615440434822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d3cdbc754245%3A0xed1dc3e38894f13c!2sAnfa%20Park!5e0!3m2!1sfr!2sma!4v1683196277073!5m2!1sfr!2sma" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    
+                        
+                    </div>
+                    <span>PARC CASA ANFA</span>
+                    <a href="#">Détails</a>
+                 </li>
+                 <li class="lieu">
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.864407003165!2d-7.649405324868504!3d33.58286964236967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d2e77f3d8aaf%3A0x9169b10a83e53ab!2sStade%20Mohammed%20V!5e0!3m2!1sfr!2sma!4v1683195340116!5m2!1sfr!2sma" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    
+                    </div>
+                    <span>STADE MOHAMMED V</span>
+                    <a href="#">Détails</a>
+                 </li>
+                 <li class="lieu">
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.133018586894!2d-7.711584603210447!3d33.575895400000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d4a33900f835%3A0xb540923b5bdf10fb!2sMorocco%20Mall!5e0!3m2!1sfr!2sma!4v1683195171341!5m2!1sfr!2sma" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <span>MOROCCO MALL</span>
+                    <a href="#">Détails</a>
+                 </li>
+                 
+            </ul>
+        </div>
+    </section>
+
+    <!-- section services -->
+
+    <section id="services">
+        <h1 class="section_title">Nos Services</h1>
+        <div class="list_services">
+            <div class="service">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>Dépannage</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis illum natus iste, dicta maiores ipsam.</p>
+                 <a href="#" class="read_more">Lire Plus</a>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>Dépannage</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis illum natus iste, dicta maiores ipsam.</p>
+                 <a href="#" class="read_more">Lire Plus</a>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>Dépannage</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis illum natus iste, dicta maiores ipsam.</p>
+                 <a href="#" class="read_more">Lire Plus</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- section contact -->
+
+    <section id="contact">
+    </section>
+ 
+
+    <footer>
+        <p>FaizDev YouTube Copyright 2022 </p>
+    </footer>
+
+    <script>
+        //menu responsive code JS
+
+        var menu_toggle = document.querySelector('.menu_toggle');
+        var menu = document.querySelector('.menu');
+        var menu_toggle_span = document.querySelector('.menu_toggle span');
+
+        menu_toggle.onclick = function(){
+            menu_toggle.classList.toggle('active');
+            menu_toggle_span.classList.toggle('active');
+            menu.classList.toggle('responsive') ;
+        }
+
+    </script>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
+    <script src ="./app.js"></script>
+</body>
+</html>
